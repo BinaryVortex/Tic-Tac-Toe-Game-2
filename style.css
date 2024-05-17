@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background:url(h.jpg);
+}
+
+.container{
+  width: 500px;
+}
+
+.container h2{
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+  color: #000000;
+}
+
+.container .squres{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .squres div{
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #50577a;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.player-1,
+.player-2{
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.player-1 h1,
+.player-2 h1{
+  color: #50577a;
+  font-size: 1.8rem;
+}
+
+.player-1 p,
+.player-2 p{
+  font-size: 3rem;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.disable{
+  pointer-events: none;
+  opacity: 0.8;
+}
